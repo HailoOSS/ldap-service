@@ -1,0 +1,12 @@
+package com.hailocab.service.ldap.login;
+
+import "github.com/hailocab/ldap-service/proto/common.proto";
+
+message Request {
+	optional string username = 1;
+	optional string password = 2;
+}
+
+message Response {
+	optional com.hailocab.service.ldap.User user = 1;
+}

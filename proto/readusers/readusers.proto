@@ -1,0 +1,11 @@
+package com.hailocab.service.ldap.readusers;
+
+import "github.com/hailooss/ldap-service/proto/common.proto";
+
+message Request {
+	repeated string ids = 1;
+}
+
+message Response {
+	repeated com.hailocab.service.ldap.User users = 1;
+}

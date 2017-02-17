@@ -1,0 +1,8 @@
+package com.hailocab.service.ldap;
+
+message User {
+	optional string username = 1;
+	optional string userID = 2;
+	repeated string groups = 3;
+	repeated string roles = 4;
+}
